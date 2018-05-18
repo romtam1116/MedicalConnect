@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="SearchPeopleCell" customModule="Radioish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nRG-Vu-vSF" customClass="RadAvatar" customModule="Radioish" customModuleProvider="target">
+                        <rect key="frame" x="22" y="18" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="5bi-co-bau"/>
+                            <constraint firstAttribute="height" constant="52" id="OOJ-1x-EWF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNx-nB-eM2">
+                        <rect key="frame" x="96" y="13" width="44" height="25"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                        <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsO-Vd-zNu">
+                        <rect key="frame" x="96" y="36" width="29.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8239 Plays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-Xu-tK4">
+                        <rect key="frame" x="96" y="55" width="57" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hNx-nB-eM2" firstAttribute="leading" secondItem="nRG-Vu-vSF" secondAttribute="trailing" constant="22" id="BWM-W8-upr"/>
+                    <constraint firstItem="hNx-nB-eM2" firstAttribute="top" secondItem="nRG-Vu-vSF" secondAttribute="top" constant="-5" id="FNZ-fq-4cT"/>
+                    <constraint firstItem="nRG-Vu-vSF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="Jkv-cM-ncu"/>
+                    <constraint firstItem="nRG-Vu-vSF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nne-hp-luA"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hNx-nB-eM2" secondAttribute="trailing" constant="12" id="Qbr-D7-tJm"/>
+                    <constraint firstItem="gsO-Vd-zNu" firstAttribute="leading" secondItem="hNx-nB-eM2" secondAttribute="leading" id="Tgs-QI-0Ws"/>
+                    <constraint firstItem="gsO-Vd-zNu" firstAttribute="centerY" secondItem="nRG-Vu-vSF" secondAttribute="centerY" id="cmF-6x-rPp"/>
+                    <constraint firstItem="Ub6-Xu-tK4" firstAttribute="leading" secondItem="hNx-nB-eM2" secondAttribute="leading" id="eD1-j8-1yo"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gsO-Vd-zNu" secondAttribute="trailing" constant="12" id="r6Z-wQ-SQ8"/>
+                    <constraint firstItem="Ub6-Xu-tK4" firstAttribute="top" secondItem="gsO-Vd-zNu" secondAttribute="bottom" constant="2" id="xex-Pn-SvS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgUserPhoto" destination="nRG-Vu-vSF" id="TyV-LT-pIw"/>
+                <outlet property="lblUserDescription" destination="gsO-Vd-zNu" id="1jB-XH-hUO"/>
+                <outlet property="lblUsername" destination="hNx-nB-eM2" id="yti-Md-Eb0"/>
+                <outlet property="lblUserplays" destination="Ub6-Xu-tK4" id="05r-gG-T6F"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrivateUserTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="PrivateUserTableViewCell" customModule="Radioish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isg-KU-l9i">
+                        <rect key="frame" x="40" y="19" width="240" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-pp-arW">
+                                <rect key="frame" x="110" y="29" width="20" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="59M-aw-7bo"/>
+                                    <constraint firstAttribute="width" constant="20" id="ItA-yi-udv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This account is private." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7t-oz-Kak">
+                                <rect key="frame" x="0.0" y="63" width="240" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="jnQ-Le-YtT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow to see their playlist." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxK-y6-kDE">
+                                <rect key="frame" x="0.0" y="82" width="240" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="j3M-8o-0kq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YxK-y6-kDE" firstAttribute="top" secondItem="O7t-oz-Kak" secondAttribute="bottom" id="57n-Aq-7Z0"/>
+                            <constraint firstItem="iWm-pp-arW" firstAttribute="top" secondItem="isg-KU-l9i" secondAttribute="top" constant="29" id="CtE-gA-lcy"/>
+                            <constraint firstItem="YxK-y6-kDE" firstAttribute="leading" secondItem="isg-KU-l9i" secondAttribute="leading" id="SeP-eX-KJd"/>
+                            <constraint firstAttribute="width" constant="240" id="USj-T1-PQK"/>
+                            <constraint firstItem="O7t-oz-Kak" firstAttribute="leading" secondItem="isg-KU-l9i" secondAttribute="leading" id="cPx-zJ-uXG"/>
+                            <constraint firstAttribute="trailing" secondItem="YxK-y6-kDE" secondAttribute="trailing" id="fKz-KQ-uKt"/>
+                            <constraint firstItem="O7t-oz-Kak" firstAttribute="top" secondItem="iWm-pp-arW" secondAttribute="bottom" constant="8" id="hDC-Uh-FNa"/>
+                            <constraint firstAttribute="height" constant="110" id="hjg-zC-czF"/>
+                            <constraint firstAttribute="trailing" secondItem="O7t-oz-Kak" secondAttribute="trailing" id="iNm-EI-OM6"/>
+                            <constraint firstItem="iWm-pp-arW" firstAttribute="centerX" secondItem="isg-KU-l9i" secondAttribute="centerX" id="mFP-GI-0u9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="isg-KU-l9i" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1Ta-Fr-lzG"/>
+                    <constraint firstItem="isg-KU-l9i" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SqU-9m-zkX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="25" y="60"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lock" width="20" height="26"/>
+    </resources>
+</document>

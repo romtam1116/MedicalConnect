@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CallHistoryAudioCell" customModule="Medic_Connect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zrN-0p-uew" customClass="RadAvatar" customModule="Medic_Connect" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="LFq-7f-R7k"/>
+                            <constraint firstAttribute="width" constant="44" id="fPj-51-6RD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38I-pI-Iyz">
+                        <rect key="frame" x="74" y="10" width="39" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0KK-br-rzg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smithers, BC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJe-ia-eff">
+                        <rect key="frame" x="74" y="28" width="63.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="rht-51-3ld"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                        <color key="textColor" red="0.6588235294" green="0.6588235294" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eob-Za-RaQ">
+                        <rect key="frame" x="74" y="46" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="5tU-Is-IFZ"/>
+                            <constraint firstAttribute="width" constant="14" id="HQc-EO-7Qg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZJe-ia-eff" firstAttribute="top" secondItem="38I-pI-Iyz" secondAttribute="bottom" constant="-2" id="18X-sq-T5e"/>
+                    <constraint firstItem="Eob-Za-RaQ" firstAttribute="top" secondItem="ZJe-ia-eff" secondAttribute="bottom" constant="2" id="GdN-uh-6QF"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZJe-ia-eff" secondAttribute="trailing" constant="8" id="KBS-oT-Vi4"/>
+                    <constraint firstItem="Eob-Za-RaQ" firstAttribute="leading" secondItem="38I-pI-Iyz" secondAttribute="leading" id="WXa-Mc-T1Z"/>
+                    <constraint firstItem="38I-pI-Iyz" firstAttribute="top" secondItem="zrN-0p-uew" secondAttribute="top" id="Wuy-I7-mNc"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="38I-pI-Iyz" secondAttribute="trailing" constant="8" id="c1a-ex-KtX"/>
+                    <constraint firstItem="zrN-0p-uew" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dq5-mh-VhB"/>
+                    <constraint firstItem="38I-pI-Iyz" firstAttribute="leading" secondItem="zrN-0p-uew" secondAttribute="trailing" constant="14" id="fzi-mz-zyb"/>
+                    <constraint firstItem="zrN-0p-uew" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hP2-yJ-Cyk"/>
+                    <constraint firstItem="ZJe-ia-eff" firstAttribute="leading" secondItem="38I-pI-Iyz" secondAttribute="leading" id="zsH-Oh-jYh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgType" destination="Eob-Za-RaQ" id="7fS-Zd-jTA"/>
+                <outlet property="imgUserPhoto" destination="zrN-0p-uew" id="vN2-o3-dOj"/>
+                <outlet property="lblDate" destination="ZJe-ia-eff" id="efb-7s-hHH"/>
+                <outlet property="lblUserName" destination="38I-pI-Iyz" id="7SG-Vr-ywx"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>
